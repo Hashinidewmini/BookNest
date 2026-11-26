@@ -47,6 +47,17 @@ npx tsc --noEmit           # type-check
 
 Never commit or push. When a task is finished, suggest a commit message in Conventional Commits format (for example `feat(books): add smart search screen`) and let the user commit it.
 
+## AI usage log (AI_USAGE.md)
+
+The assignment requires a log of how AI was used. Maintain `AI_USAGE.md` in the project root:
+
+- At the end of every task, add or update today's entry (`### YYYY-MM-DD - <phase or feature>`), newest at the bottom.
+- Fill in "What I asked Claude for" and "What Claude produced" yourself.
+- For "What I changed, rejected or corrected", **never invent anything**. Ask the user what they changed or rejected, and write only what they say. If they say nothing, write "No changes this session".
+- Whenever the user rejects a suggestion, undoes a change, or fixes Claude's code, remind them to log it.
+- When a correction is significant, also add it to "Corrections summary". The assignment needs at least one strong example.
+- Keep entries short and in simple English.
+
 ## Architecture notes
 
 - `index.js` registers `App` with `AppRegistry` under the name in `app.json` (`BookNest`). That name must match the native project.
