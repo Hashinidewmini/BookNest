@@ -1,0 +1,11 @@
+# Files Prettier should never format (generated or third-party).
+node_modules/
+coverage/
+android/.gradle/
+android/build/
+android/app/build/
+android/app/.cxx/
+ios/Pods/
+ios/build/
+*.lock
+package-lock.json

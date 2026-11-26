@@ -1,0 +1,13 @@
+# Always store and check out text files with LF line endings,
+# so Prettier's `endOfLine: 'lf'` rule passes on Windows too.
+* text=auto eol=lf
+
+# Windows batch files must keep CRLF endings to run correctly.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files: never change them.
+*.png binary
+*.jpg binary
+*.jar binary
+*.keystore binary
